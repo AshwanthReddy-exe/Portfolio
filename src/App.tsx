@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { DefaultTheme, ThemeProvider } from "styled-components";
+import { Analytics } from "@vercel/analytics/react";
 import { useTheme } from "./hooks/useTheme";
 import GlobalStyle from "./components/styles/GlobalStyle";
 import Terminal from "./components/Terminal";
@@ -62,6 +63,7 @@ function App() {
           </themeContext.Provider>
         </ThemeProvider>
       )}
+      <Analytics />
     </>
   );
 }
