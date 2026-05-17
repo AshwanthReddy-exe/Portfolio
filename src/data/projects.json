@@ -1,0 +1,29 @@
+[
+  {
+    "name": "VectraCore",
+    "tagline": "Pure Java vector-search engine implementing HNSW and KD-Tree indexing.",
+    "description": "Handled concurrent vector searches using synchronized indexing and thread pools. Reduced runtime overhead using a lightweight executable with Java's multithreaded HTTP server.",
+    "stack": ["Java", "Multithreading", "Gradle", "Ollama"],
+    "github": "https://github.com/AshwanthReddy-exe/vectracore",
+    "live": null,
+    "featured": true
+  },
+  {
+    "name": "GrabPic",
+    "tagline": "Real-time scalable photo sharing with AI retrieval.",
+    "description": "Handled 2500+ real-time searches using scalable Spring Boot services. Reduced REST API latency to <200ms using Redis caching and secured workflows using Azure SAS URLs.",
+    "stack": ["Spring Boot", "Redis", "FastAPI", "Python", "Angular", "Docker", "Azure Blob", "FAISS"],
+    "github": "https://github.com/AshwanthReddy-exe/GrabPic",
+    "live": "https://grabpic.app/",
+    "featured": false
+  },
+  {
+    "name": "Offline Mesh Payments",
+    "tagline": "Resilient offline payment workflows using encrypted multi-hop routing.",
+    "description": "Built deferred settlement systems eliminating duplicate settlements using Redis SETNX and SHA-256. Secured wallet transactions using optimistic locking and AES-GCM encryption.",
+    "stack": ["Spring Boot", "JPA/Hibernate", "Redis", "PostgreSQL"],
+    "github": "https://github.com/AshwanthReddy-exe/offline-mesh-pay-system",
+    "live": "https://mesh.ashwanthreddy.dev/",
+    "featured": false
+  }
+]

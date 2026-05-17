@@ -1,0 +1,204 @@
+/* ============================================
+   Terminal Emulator (Sleek modern IDE style)
+   ============================================ */
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+/* macOS-style chrome title bar (muted) */
+.terminal-chrome {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem var(--space-lg);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.terminal-chrome__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-chrome__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.terminal-chrome__dot--red { background: var(--border-hover); cursor: pointer; }
+.terminal-chrome__dot--yellow { background: var(--border-hover); }
+.terminal-chrome__dot--green { background: var(--border-hover); }
+
+.terminal-chrome:hover .terminal-chrome__dot--red { background: var(--red); }
+.terminal-chrome:hover .terminal-chrome__dot--yellow { background: var(--yellow); }
+.terminal-chrome:hover .terminal-chrome__dot--green { background: var(--green); }
+
+.terminal-chrome__title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--text3);
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Terminal body — scrollable output area */
+.terminal-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  scroll-behavior: smooth;
+}
+
+/* Output lines */
+.terminal-line {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal-line--prompt {
+  display: flex;
+  gap: 0;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.terminal-line__prompt-user {
+  color: var(--text2);
+}
+
+.terminal-line__prompt-separator {
+  color: var(--text3);
+}
+
+.terminal-line__prompt-path {
+  color: var(--text2);
+}
+
+.terminal-line__prompt-dollar {
+  color: var(--text3);
+  margin-right: var(--space-sm);
+}
+
+.terminal-line__command {
+  color: var(--text);
+}
+
+.terminal-line--output {
+  color: var(--text2);
+}
+
+.terminal-line--header {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.terminal-line--error {
+  color: var(--red);
+}
+
+.terminal-line--muted {
+  color: var(--text3);
+}
+
+.terminal-line--success {
+  color: var(--text);
+}
+
+.terminal-line--link {
+  color: var(--text2);
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-line--link:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+  text-decoration: none;
+}
+
+.terminal-line--empty {
+  height: 0.85rem;
+}
+
+/* Quick command hint pills */
+.terminal-hints {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.terminal-hints__pill {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  background: var(--surface2);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-mono);
+}
+
+.terminal-hints__pill:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+  background: var(--surface3);
+}
+
+/* Input line */
+.terminal-input {
+  display: flex;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  flex-shrink: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.terminal-input__prompt {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+.terminal-input__field {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 400;
+  caret-color: var(--text);
+}
+
+.terminal-input__field::placeholder {
+  color: var(--text3);
+}
+
+.terminal-input__field:focus {
+  outline: none;
+}

@@ -1,0 +1,133 @@
+/* ============================================
+   Project Cards
+   ============================================ */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.projects-section__heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.project-card {
+  position: relative;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.project-card:hover {
+  border-color: var(--border-hover);
+  background: var(--surface2);
+}
+
+.project-card--clickable {
+  cursor: pointer;
+}
+
+.project-card--clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.project-card--featured {
+  border-left: 2px solid var(--text2);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.project-card__name {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  letter-spacing: -0.01em;
+}
+
+.project-card__featured-badge {
+  font-size: 0.65rem;
+  font-weight: 400;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--surface3);
+  color: var(--text2);
+  border: 1px solid var(--border);
+}
+
+.project-card__links {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.project-card__link {
+  color: var(--text3);
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.project-card__link:hover {
+  color: var(--text);
+  border: none;
+}
+
+.project-card__link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.project-card__tagline {
+  font-size: 0.85rem;
+  color: var(--text2);
+  font-weight: 400;
+}
+
+.project-card__description {
+  font-size: 0.85rem;
+  color: var(--text3);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.project-card__stack {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-xs);
+}
+
+.project-card__tech {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text2);
+  border: 1px solid var(--border);
+}

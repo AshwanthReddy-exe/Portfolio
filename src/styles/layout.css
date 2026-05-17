@@ -1,0 +1,137 @@
+/* ============================================
+   Two-Column Layout
+   ============================================ */
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.left-panel {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: var(--space-3xl) var(--space-3xl);
+  background: var(--bg);
+  position: relative;
+}
+
+.left-panel__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl); /* Increased gap for elegance */
+  width: 100%;
+}
+
+/* Subtle separator at panel edge */
+.left-panel::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 55%;
+  width: 1px;
+  height: 100vh;
+  background: var(--border);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.right-panel {
+  height: 100vh;
+  overflow: hidden;
+  background: var(--surface); /* Very slightly elevated */
+  position: relative;
+}
+
+/* ============================================
+   Terminal Toggle Layout States
+   ============================================ */
+.portfolio-layout--single {
+  grid-template-columns: 1fr;
+}
+
+.left-panel--centered {
+  /* Center the inner content like a blog */
+}
+
+.left-panel--centered .left-panel__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+/* Remove the divider when single column */
+.left-panel--centered::after {
+  display: none;
+}
+
+/* Terminal Toggle FAB */
+.terminal-toggle-fab {
+  position: fixed;
+  bottom: var(--space-2xl);
+  right: var(--space-2xl);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  z-index: 100;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.terminal-toggle-fab:hover {
+  transform: scale(1.05);
+  background: var(--text2);
+}
+
+.terminal-toggle-fab svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ============================================
+   Mobile Responsive — Single Column
+   ============================================ */
+@media (max-width: 768px) {
+  .portfolio-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(50vh, 1fr);
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-panel {
+    padding: var(--space-xl) var(--space-lg);
+    overflow-y: visible;
+    height: auto;
+  }
+
+  .left-panel::after {
+    display: none;
+  }
+
+  .right-panel {
+    height: auto;
+    min-height: 50vh;
+  }
+
+  body {
+    overflow: auto;
+    height: auto;
+  }
+
+  #root {
+    overflow: auto;
+    height: auto;
+  }
+}

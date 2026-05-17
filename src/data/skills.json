@@ -1,0 +1,8 @@
+{
+  "Languages": ["☕ Java", "🗄️ SQL", "🐍 Python", "⚡ JavaScript"],
+  "Frontend": ["🅰️ Angular", "🎨 HTML/CSS/JS"],
+  "Backend": ["🍃 Spring Boot", "🔌 REST APIs", "💾 JPA/Hibernate", "🧩 Microservices", "🚀 FastAPI"],
+  "AI/ML": ["🔥 PyTorch", "🔍 Vector Search", "🧠 RAG Systems", "⚡ FAISS", "🦙 Ollama"],
+  "Databases": ["🐬 MySQL", "🔴 Redis", "🐘 PostgreSQL", "🍃 MongoDB"],
+  "DevOps & Cloud": ["🐙 Git", "🐈 GitHub", "🐋 Docker", "🐧 Linux", "☁️ Azure VM & Blob", "☁️ AWS EC2 & S3", "📦 Maven", "🐘 Gradle", "⚙️ Jenkins"]
+}

@@ -1,0 +1,37 @@
+/* ============================================
+   Footer
+   ============================================ */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-bottom: var(--space-lg);
+}
+
+.footer__text {
+  font-size: 0.8rem;
+  color: var(--text3);
+}
+
+.footer__socials {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.footer__social-link {
+  color: var(--text3);
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.footer__social-link:hover {
+  color: var(--text);
+  border: none;
+}
+
+.footer__social-link svg {
+  width: 16px;
+  height: 16px;
+}

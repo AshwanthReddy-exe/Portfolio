@@ -1,0 +1,42 @@
+/* ============================================
+   Links Row
+   ============================================ */
+.links-row {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.links-row__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text2);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.links-row__item:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+  background: var(--surface3);
+  text-decoration: none;
+}
+
+.links-row__item:focus-visible {
+  outline: 2px solid var(--border-hover);
+  outline-offset: 2px;
+}
+
+.links-row__icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}

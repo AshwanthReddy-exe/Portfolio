@@ -1,0 +1,13 @@
+[
+  {
+    "company": "CyberGuard360",
+    "location": "USA (Remote)",
+    "role": "Engineering Intern",
+    "duration": "March 2025 – July 2025",
+    "bullets": [
+      "Improved threat-detection accuracy from 55% to 73% by optimizing preprocessing and inference pipelines.",
+      "Reduced manual threat-analysis time by 40% developing scalable Spring Boot microservices.",
+      "Accelerated real-time security event processing through REST API integrations and database-driven workflows."
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+/* ============================================
+   Certifications
+   ============================================ */
+.certifications-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.certifications-section__heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color var(--transition-fast);
+}
+
+.certification-item:hover {
+  border-color: var(--border-hover);
+}
+
+.certification-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.certification-item__title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text);
+  border: none;
+}
+.certification-item__title:hover {
+  border: none;
+}
+
+.certification-item__issuer {
+  font-size: 0.8rem;
+  color: var(--text3);
+}
+
+.certification-item__date {
+  font-size: 0.8rem;
+  color: var(--text3);
+  flex-shrink: 0;
+}

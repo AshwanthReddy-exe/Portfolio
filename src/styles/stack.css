@@ -1,0 +1,72 @@
+/* ============================================
+   Tech Stack — Filterable Chips
+   ============================================ */
+.stack-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.stack-section__heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.stack-filters {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.stack-filters__btn {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text3);
+  background: transparent;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.stack-filters__btn:hover {
+  border-color: var(--text3);
+  color: var(--text2);
+}
+
+.stack-filters__btn--active {
+  border-color: var(--text);
+  color: var(--bg);
+  background: var(--text);
+}
+
+.stack-chips {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.stack-chip {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  background: var(--surface2);
+  transition: all var(--transition-fast);
+}
+
+.stack-chip--highlighted {
+  border-color: var(--border-hover);
+  color: var(--text);
+  background: var(--surface3);
+}
+
+.stack-chip--dimmed {
+  opacity: 0.25;
+}

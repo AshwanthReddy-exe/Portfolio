@@ -1,0 +1,65 @@
+/* ============================================
+   Design Tokens — Minimalist & Elegant
+   ============================================ */
+:root {
+  /* Backgrounds — True black for deep contrast */
+  --bg: #000000;
+  --surface: #09090b; /* Zinc 950 */
+  --surface2: #18181b; /* Zinc 900 */
+  --surface3: #27272a; /* Zinc 800 */
+
+  /* Borders — Ultra subtle */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --border-glow: transparent;
+
+  /* Accent colors — Muted, clean, and elegant */
+  --accent: #fafafa; /* Zinc 50 for primary highlight */
+  --accent-dim: rgba(255, 255, 255, 0.06);
+  --accent2: #a1a1aa; /* Zinc 400 for secondary */
+  --accent2-dim: rgba(161, 161, 170, 0.1);
+
+  /* Semantic colors — Muted tones */
+  --green: #4ade80;
+  --green-dim: rgba(74, 222, 128, 0.15);
+  --red: #f87171;
+  --yellow: #facc15;
+  --cyan: #38bdf8;
+  --amber: #fbbf24;
+
+  /* Text — High contrast to muted grays */
+  --text: #fafafa;      /* Zinc 50 */
+  --text2: #a1a1aa;     /* Zinc 400 */
+  --text3: #71717a;     /* Zinc 500 */
+  --muted: #52525b;     /* Zinc 600 */
+
+  /* Typography */
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3rem;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.15s var(--ease-out);
+  --transition-base: 0.25s var(--ease-out);
+  --transition-slow: 0.4s var(--ease-out);
+
+  /* Minimalist elements (no heavy blur) */
+  --glass-bg: transparent;
+  --glass-blur: none;
+}
